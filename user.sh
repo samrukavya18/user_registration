@@ -2,6 +2,10 @@
 
 echo " WELCOME TO USER REGISTRATION"
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> uc-5
 read -p "Enter your First Name : " fname
 function name()
 {
@@ -56,3 +60,18 @@ function phno()
 }
 phno $No
 
+<<<<<<< HEAD
+=======
+function pwd()
+{
+  echo "Enter Password"
+  read password
+if [[ ${#password} -ge 8 ]]
+then
+   echo "Valid Password"
+else
+   echo "Invalid Password"
+fi
+}
+pwd
+>>>>>>> uc-5
