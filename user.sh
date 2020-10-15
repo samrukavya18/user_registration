@@ -14,3 +14,18 @@ function name()
       fi
 }
 name $fname
+
+
+read -p "Enter your Last Name : " lname
+function namel()
+{
+      lastname="^([A-Z]+)([A-Za-z]{2,15})$"
+      if [[ lname =~ $lastname ]]
+      then
+          echo " valid Name"
+      else
+          echo "Invalid Name"
+      fi
+}
+namel $lname
+
