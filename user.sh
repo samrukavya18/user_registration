@@ -34,7 +34,7 @@ namel $lname
 read -p "Enter your Email ID : " Id
 function email()
 {
-      usermail="^([A-Za-z0-9\.\-\+]+)@([A-Za-z0-9\.]{1,5})([A-Za-z\.]+){1,4}([A-Za-z]{1,3})$"
+      usermail="^(?=.{1,64}@)[A-Za-z0-9_-]+(\\.[A-Za-z0-9_-]+)*@"+"[^-][A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$"
       if [[ Id =~ $usermail ]]
       then
           echo " valid Email ID"
