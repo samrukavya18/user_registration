@@ -41,3 +41,18 @@ function email()
       fi
 }
 email $Id
+
+
+read -p "Enter your Phone Number : "  No
+function phno()
+{
+      number="^([1-9]{2}\ [0-9]{10}$"
+      if [[ No =~ $number ]]
+      then
+          echo " valid phone number"
+      else
+          echo "Invalid phone number"
+      fi
+}
+phno $No
+
