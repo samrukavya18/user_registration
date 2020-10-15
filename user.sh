@@ -29,3 +29,15 @@ function namel()
 }
 namel $lname
 
+read -p "Enter your Email ID : " Id
+function email()
+{
+      usermail="^([A-Za-z0-9\.\-\+]+)@([A-Za-z0-9\.]{1,5})([A-Za-z\.]+){1,4}([A-Za-z]{1,3})$"
+      if [[ Id =~ $usermail ]]
+      then
+          echo " valid Email ID"
+      else
+          echo "Invalid Email ID"
+      fi
+}
+email $Id
