@@ -66,7 +66,7 @@ function pwd()
 
 
 
-if [[ ${password} == *[[:lower:]] ]]
+if [[ ${password} == *[[0-9]]* ]]
 
 then
    echo "Valid Password"
